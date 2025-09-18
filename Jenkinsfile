@@ -10,6 +10,7 @@ pipeline {
 
         stage('Build Frontend Image') {
             steps {
+                sh "whoami"
                 sh "docker build -t saurav3198/easycrud1-jenkins:frontend ./frontend"
             }
         }
